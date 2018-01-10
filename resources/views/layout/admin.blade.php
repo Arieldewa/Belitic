@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="{{url('analisa')}}">
+                    <a href="{{url('spk')}}">
                         <i class="pe-7s-users"></i>
                         <p>Analisa</p>
                     </a>

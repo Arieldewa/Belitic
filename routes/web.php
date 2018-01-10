@@ -21,8 +21,9 @@ Route::group(['middleware' => ['auth']], function () {
 	Route::resource('product','ProductController');
 	Route::resource('distribution','DistributionController');
 	Route::resource('historystok','HistoryStokController');
+	Route::resource('spk','SpkController');
 	Route::get('cost','DistributionController@cost')->name('cost');
-	Route::get('spk','SpkController@spk')->name('spk');
+	Route::get('spk-analisis/{id}','SpkController@spk')->name('spk-analisi');
 	Route::get('analisa','SpkController@saranDistribusi')->name('analisa');
 
 	Route::get('dashboard','HomeController@dashboard')->name('dashboard');
